@@ -2,7 +2,7 @@
 #include "include.h"
 #include<stdlib.h>
 
-void multiple_defenition_func() {
+void no_defenition_func() {
     ;
 }
 
