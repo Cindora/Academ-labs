@@ -2,9 +2,13 @@
 #include "include.h"
 #include<stdlib.h>
 
-// void no_defenition_func() {
-//     ;
-// }
+void no_defenition_func() {
+    ;
+}
+
+void multiple_defenition_func() {
+    ;
+}
 
 void multiple_defenition_func() {
     ;
