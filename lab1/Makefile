@@ -1,4 +1,7 @@
-lab1: src.o
-	gcc -o lab1 src.o
-src.o: src.c
-	gcc -c src.c 
+all: lab1 bin.o src.c
+
+lab1: bin.o
+	gcc bin.o -o lab1
+
+bin.o: src.c
+	gcc -c src.c -o bin.o
