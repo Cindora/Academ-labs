@@ -1,38 +1,30 @@
-#include "S-Linked_List.h"
-#include "XML_parsed_elems.h"
-
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
+#include "s-list.h"
+#include "XML_parser.h"
 
-int main(int argc, char** argv[])
-{
-    struct Node* head = NULL;
+int main(void){
+    List * list = makelist();
 
-    //int a[] = { 10, 15, 64, 34, 76, 43, 22, 34 };
+    /*
+    add(1, list);
+    add(20, list);
+    add(2, list);
+    add(5, list);
+    add(8, list);
+    add(9, list);
+    add(13, list);
+    display(list);
+    delete(2, list);
+    display(list);
+    delete(1, list);
+    display(list);
+    delete(20, list);
+    display(list);
+*/
 
-    //int len = sizeof(a) / sizeof(a[0]);
-
-    //for (int i = 0; i < len; i++)
-    //    insertFirst(&head, a[i]);
-
-    //display(head);
-
-    //deleteFirst(&head);
-    //deleteFirst(&head);
-
-    
-
-    //char* source = 
-    //printf("main %s\n", head);
-
-    read_file_ascii("List_Of_Elements.xml", &head);
-
-    display(head);
-    
-
-    //printf("%s\n", source);
-    //free(source);
-
+    read_file_ascii("D:\\Academ\\Academ-labs\\lab3\\List_Of_Elements.xml", list);
+    display(list);
 
     return 0;
 }

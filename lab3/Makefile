@@ -1,8 +1,8 @@
-lab3: Main.o S-Linked_list.o XML_parsed_elems.o
-	gcc -o lab3 Main.o S-Linked_list.o XML_parsed_elems.o
-Main.o: Main.c
-	gcc -c Main.c
-S-Linked_list.o: S-Linked_list.c
-	gcc -c s-Linked_list.c
-XML_parsed_elems.o: XML_parsed_elems.c
-	gcc -c XML_parsed_elems.c
+lab3: main.o s-list.o XML_parser.o
+	gcc -o lab3 main.o s-list.o XML_parser.o
+main.o: main.c
+	gcc -c main.c
+s-list.o: s-list.c
+	gcc -c s-list.c
+XML_parser.o: XML_parser.c
+	gcc -c XML_parser.c
