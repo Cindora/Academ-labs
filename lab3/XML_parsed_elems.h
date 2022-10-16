@@ -1,1 +1,0 @@
-void* read_file_ascii(const char* path, struct Node** head);
